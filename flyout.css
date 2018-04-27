@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container ul {
+    list-style: none;
+}
+#container ul li {
+    background-color: blueviolet;
+    width: 120px;
+    border: 1px solid white;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.5s;
+}
+#container ul li:hover {
+    background-color: skyblue;
+}
+#container ul ul {
+    display: none;
+}
+#container ul li:hover > ul {
+    display: block;
+}
+#container ul ul ul {
+    margin-left: 130px;
+    top:0;
+    position: absolute;
+}
